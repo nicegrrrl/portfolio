@@ -27,5 +27,9 @@ export const GlobalProvider = ({ children }: ChildrenProps) => {
     };
   }, [currentIndex, navigate, routes]);
 
-  return <GlobalContext.Provider value={{}}>{children}</GlobalContext.Provider>;
+  return (
+    <GlobalContext.Provider value={{ setCurrentIndex, routes }}>
+      {children}
+    </GlobalContext.Provider>
+  );
 };

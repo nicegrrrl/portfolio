@@ -2,9 +2,18 @@ import { DefaultTemplate } from "../DefaultTemplate/defaultTemplate";
 import tagImg from "../../assets/img/close-tag.png";
 import styles from "./style.module.scss";
 import { useTranslation } from "react-i18next";
+import { useContext } from "react";
+import { GlobalContext } from "../../providers/globalContext";
 
 export const HomePage = () => {
   const { t } = useTranslation();
+
+  const { setCurrentIndex, routes } = useContext(GlobalContext);
+
+  const routeIndex = routes.indexOf("/");
+
+  setCurrentIndex(routeIndex);
+
 
   return (
     <>

@@ -7,9 +7,17 @@ import linkedin from "../../assets/img/linkedin.png";
 import github from "../../assets/img/github.png";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { useContext } from "react";
+import { GlobalContext } from "../../providers/globalContext";
 
 export const ContactPage = () => {
   const { t } = useTranslation();
+
+  const { setCurrentIndex, routes } = useContext(GlobalContext);
+
+  const routeIndex = routes.indexOf("/contact");
+
+  setCurrentIndex(routeIndex);
 
   return (
     <>

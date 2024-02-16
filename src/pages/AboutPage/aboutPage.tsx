@@ -4,9 +4,18 @@ import styles from "./style.module.scss";
 import { Item } from "../../components/Item/item";
 import asterisk from "../../assets/img/asterisk.png";
 import { useTranslation } from "react-i18next";
+import { useContext } from "react";
+import { GlobalContext } from "../../providers/globalContext";
 
 export const AboutPage = () => {
   const { t } = useTranslation();
+
+  const { setCurrentIndex, routes } = useContext(GlobalContext);
+
+  const routeIndex = routes.indexOf("/about");
+
+  setCurrentIndex(routeIndex);
+
   return (
     <>
       <DefaultTemplate>
