@@ -1,0 +1,10 @@
+.pageBox {
+  width: 100vw;
+  min-height: calc(100vh - 110px - 60px);
+  display: flex;
+  align-items: center;
+
+  @media screen and (min-width: 790px) {
+    height: calc(100vh - 80px - 60px);
+  }
+}

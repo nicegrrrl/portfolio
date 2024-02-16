@@ -1,0 +1,80 @@
+.header {
+  height: 110px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1px solid var(--divider-color);
+  user-select: none;
+  position: sticky;
+  top: 0;
+  z-index: 90;
+  background-color: var(--white);
+
+  @media screen and (min-width: 790px) {
+    height: 80px;
+    flex-direction: row;
+  }
+}
+
+.headerContent {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 34px;
+
+  @media screen and (min-width: 1000px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.link {
+  cursor: pointer;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.textButtonsContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 6px;
+
+  @media screen and (min-width: 790px) {
+    gap: 32px;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  @media screen and (min-width: 790px) {
+    flex-direction: row;
+    gap: 22px;
+  }
+}
+
+.lightDarkMode {
+  color: var(--gray-dark);
+  cursor: pointer;
+}
+
+.flags {
+  height: 20px;
+  display: flex;
+  gap: 8px;
+
+  & img {
+    width: 20px;
+    cursor: pointer;
+  }
+}

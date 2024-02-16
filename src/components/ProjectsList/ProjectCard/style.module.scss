@@ -1,0 +1,88 @@
+.cardBox {
+  width: 100%;
+
+  @media screen and (min-width: 790px) {
+    width: fit-content;
+  }
+}
+
+.card {
+  width: 98%;
+  height: fit-content;
+
+  color: var(--black);
+  background-color: var(--white-medium);
+  border-radius: 8px;
+  box-shadow: -3px -1px 7px 2px var(--white-medium);
+
+  @media screen and (min-width: 790px) {
+    width: 501px;
+    min-height: 374px;
+    height: 403px;
+    box-shadow: -6px 7px 0px 1px rgba(192, 96, 161, 0.2);
+  }
+}
+
+.topCard {
+  position: relative;
+}
+
+.image {
+  height: 180px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+
+  @media screen and (min-width: 790px) {
+    height: 200px;
+  }
+}
+
+.title {
+  position: absolute;
+  bottom: 18px;
+  left: 12px;
+  background-color: var(--pink-neon);
+  padding: 6px;
+  border-radius: 8px;
+  color: var(--project-title-color) !important;
+}
+
+.deploy,
+.repo {
+  position: absolute;
+  bottom: 18px;
+  color: var(--pink) !important;
+  opacity: 0.7;
+}
+
+.repo {
+  right: 22px;
+}
+
+.deploy {
+  right: 62px;
+}
+
+.bottomCard {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.description {
+  height: fit-content;
+
+  @media screen and (min-width: 790px) {
+    min-height: 80px;
+  }
+}
+
+.divisor {
+  width: 40%;
+  height: 2px;
+  background-color: var(--pink-light-1);
+  opacity: 0.6;
+  border-radius: 8px;
+}

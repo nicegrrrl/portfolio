@@ -1,0 +1,35 @@
+.contentBox {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(65px, 5vw, 90px);
+  user-select: none;
+}
+
+.topContent {
+  display: flex;
+  gap: 12px;
+  position: relative;
+  padding-top: clamp(30px, 5vw, 60px);
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(6px, 5vw, 12px);
+}
+
+.happyFace {
+  width: 20px;
+  position: absolute;
+  bottom: -4px;
+
+  @media screen and (min-width: 790px) {
+    width: 30px;
+  }
+}
+
+.contacts {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}

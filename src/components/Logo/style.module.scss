@@ -1,0 +1,15 @@
+.logoBox {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: context-menu;
+
+  & img {
+    width: 36px;
+  }
+
+  & p {
+    font-size: var(--font-size-6);
+    font-weight: var(--font-weight-1);
+  }
+}

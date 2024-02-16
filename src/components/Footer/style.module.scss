@@ -1,0 +1,27 @@
+.footer {
+  height: 60px;
+}
+
+.footerBox {
+  border-top: 1px solid var(--divider-color);
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.link,
+.link:visited {
+  color: var(--gray);
+}
+
+.happyFace {
+  width: 16px;
+
+  @media screen and (min-width: 790px) {
+    width: 26px;
+  }
+}

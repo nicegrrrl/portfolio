@@ -1,0 +1,40 @@
+// .pageBox {
+//   // background-color: aquamarine;
+//   width: 100vw;
+//   height: calc(100vh - 160px - 60px);
+//   display: flex;
+//   align-items: center;
+
+//   @media screen and (min-width: 790px) {
+//     // width: 100%;
+//     height: calc(100vh - 80px - 60px);
+//   }
+// }
+
+.mainContent {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 12px;
+  user-select: none;
+}
+
+.fullstack {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  @media screen and (min-width: 790px) {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.tagImg {
+  width: 20%;
+
+  @media screen and (min-width: 790px) {
+    width: 101px;
+    height: 63px;
+  }
+}
