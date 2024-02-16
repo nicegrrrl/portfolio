@@ -2,3 +2,8 @@
   color: var(--pink);
   transition: all 150ms ease-in-out;
 }
+
+.activeLink {
+  color: var(--pink) !important;
+  font-weight: var(--font-weight-3);
+}

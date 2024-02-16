@@ -4,9 +4,11 @@ import { useNavigate } from "react-router-dom";
 
 export const GlobalContext = createContext({});
 
+const routes = ["/", "/about", "/stacks", "/tools", "/projects", "/contact"];
+
 export const GlobalProvider = ({ children }: ChildrenProps) => {
-  const routes = ["/", "/about", "/stacks", "/tools", "/projects", "/contact"];
   const [currentIndex, setCurrentIndex] = useState(0);
+
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -25,10 +27,10 @@ export const GlobalProvider = ({ children }: ChildrenProps) => {
     return () => {
       document.removeEventListener("wheel", handleWheel);
     };
-  }, [currentIndex, navigate, routes]);
+  }, [currentIndex, navigate]);
 
   return (
-    <GlobalContext.Provider value={{ setCurrentIndex, routes }}>
+    <GlobalContext.Provider value={{ currentIndex, setCurrentIndex, routes }}>
       {children}
     </GlobalContext.Provider>
   );
