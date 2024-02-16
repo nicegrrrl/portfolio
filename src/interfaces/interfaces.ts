@@ -5,7 +5,7 @@ export interface ContentTemplateProps {
   children: ReactNode;
 }
 
-export interface DefaultTemplateProps {
+export interface ChildrenProps {
   children: ReactNode;
 }
 
