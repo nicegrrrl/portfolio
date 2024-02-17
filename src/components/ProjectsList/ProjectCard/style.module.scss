@@ -1,14 +1,15 @@
 .cardBox {
-  width: 100%;
+  min-width: 100%;
 
   @media screen and (min-width: 790px) {
-    width: fit-content;
+    min-width: fit-content;
   }
 }
 
 .card {
   width: 98%;
   height: fit-content;
+  min-height: 390px;
 
   color: var(--black);
   background-color: var(--white-medium);
@@ -17,7 +18,7 @@
 
   @media screen and (min-width: 790px) {
     width: 501px;
-    min-height: 374px;
+    // min-height: 374px;
     height: 403px;
     box-shadow: -6px 7px 0px 1px rgba(192, 96, 161, 0.2);
   }
