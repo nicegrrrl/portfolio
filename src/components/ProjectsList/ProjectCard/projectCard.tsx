@@ -40,3 +40,4 @@ export const ProjectCard = ({ project }: { project: Project }) => {
     </>
   );
 };
+

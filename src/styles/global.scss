@@ -7,6 +7,7 @@
   --title-color: #1b1a1a;
   --text-color: #1b1a1a;
   --project-title-color: #fbf9f9;
+  --video-bg-color: rgba(255, 255, 255, 0.7);
 
   --black: #1b1a1a;
   --white: #fbf9f9;
@@ -50,6 +51,7 @@
   --title-color: #e2e1e1;
   --text-color: #938f8f;
   --project-title-color: #fbf9f9;
+  --video-bg-color: rgba(0, 0, 0, 0.8);
 
   --black: #ebe5e5;
   --white: #1b1a1a;
@@ -88,8 +90,10 @@
 
 body {
   height: 100vh;
-  font-family: var(--font-primary);
   background-color: var(--bg-color);
+  font-family: var(--font-primary);
+  scrollbar-color: var(--pink-light-1) var(--divider-color);
+  scrollbar-gutter: stable both-edges;
 }
 
 a,
@@ -99,4 +103,8 @@ a:visited {
 
 * {
   transition: all 0.3s ease-in-out;
+}
+
+#root {
+  height: 100%;
 }
