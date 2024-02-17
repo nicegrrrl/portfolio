@@ -1,8 +1,10 @@
 import { createContext, useEffect, useState } from "react";
-import { ChildrenProps } from "../interfaces/interfaces";
+import { ChildrenProps, iDefaultContext } from "../interfaces/interfaces";
 import { useNavigate } from "react-router-dom";
 
-export const GlobalContext = createContext({});
+export const GlobalContext = createContext<iDefaultContext>(
+  {} as iDefaultContext
+);
 
 const routes = ["/", "/about", "/stacks", "/tools", "/projects", "/contact"];
 
@@ -12,7 +14,7 @@ export const GlobalProvider = ({ children }: ChildrenProps) => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    const handleWheel = (event) => {
+    const handleWheel = (event: { deltaY: number }) => {
       if (event.deltaY > 0 && currentIndex !== routes.length - 1) {
         setCurrentIndex((prevIndex) => prevIndex + 1);
         navigate(routes[currentIndex + 1]);

@@ -4,15 +4,16 @@ import { stacks } from "../../data/stacks";
 import { ContentTemplate } from "../ContentTemplate/contentTemplate";
 import { useContext } from "react";
 import { GlobalContext } from "../../providers/globalContext";
+import { iDefaultContext } from "../../interfaces/interfaces";
 
 export const StacksPage = () => {
   const { t } = useTranslation();
 
-  const { setCurrentIndex, routes } = useContext(GlobalContext);
+  const { setCurrentIndex, routes } = useContext<iDefaultContext>(GlobalContext);
 
-  const routeIndex = routes.indexOf("/stacks");
+  const routeIndex = routes!.indexOf("/stacks");
 
-  setCurrentIndex(routeIndex);
+  setCurrentIndex!(routeIndex);
 
   return (
     <>

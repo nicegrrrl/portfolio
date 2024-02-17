@@ -9,15 +9,16 @@ import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { useContext } from "react";
 import { GlobalContext } from "../../providers/globalContext";
+import { iDefaultContext } from "../../interfaces/interfaces";
 
 export const ContactPage = () => {
   const { t } = useTranslation();
 
-  const { setCurrentIndex, routes } = useContext(GlobalContext);
+  const { setCurrentIndex, routes } = useContext<iDefaultContext>(GlobalContext);
 
-  const routeIndex = routes.indexOf("/contact");
+  const routeIndex = routes!.indexOf("/contact");
 
-  setCurrentIndex(routeIndex);
+  setCurrentIndex!(routeIndex);
 
   return (
     <>

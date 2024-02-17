@@ -5,15 +5,17 @@ import { useTranslation } from "react-i18next";
 import { useContext } from "react";
 import { GlobalContext } from "../../providers/globalContext";
 import video from "../../assets/video/MVI_1436.MP4";
+import { iDefaultContext } from "../../interfaces/interfaces";
 
 export const HomePage = () => {
   const { t } = useTranslation();
 
-  const { setCurrentIndex, routes } = useContext(GlobalContext);
+  const { setCurrentIndex, routes } =
+    useContext<iDefaultContext>(GlobalContext);
 
-  const routeIndex = routes.indexOf("/");
+  const routeIndex = routes!.indexOf("/");
 
-  setCurrentIndex(routeIndex);
+  setCurrentIndex!(routeIndex);
 
   return (
     <>

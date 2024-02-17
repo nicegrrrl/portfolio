@@ -6,15 +6,16 @@ import asterisk from "../../assets/img/asterisk.png";
 import { useTranslation } from "react-i18next";
 import { useContext } from "react";
 import { GlobalContext } from "../../providers/globalContext";
+import { iDefaultContext } from "../../interfaces/interfaces";
 
 export const AboutPage = () => {
   const { t } = useTranslation();
 
-  const { setCurrentIndex, routes } = useContext(GlobalContext);
+  const { setCurrentIndex, routes } = useContext<iDefaultContext>(GlobalContext);
 
-  const routeIndex = routes.indexOf("/about");
+  const routeIndex = routes!.indexOf("/about");
 
-  setCurrentIndex(routeIndex);
+  setCurrentIndex!(routeIndex);
 
   return (
     <>

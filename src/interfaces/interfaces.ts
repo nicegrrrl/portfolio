@@ -43,3 +43,9 @@ export interface Project {
   repo: string;
   deploy: string;
 }
+
+export interface iDefaultContext {
+  currentIndex?: number;
+  setCurrentIndex?: (index: number) => void;
+  routes?: string[];
+}
