@@ -12,8 +12,8 @@ export const ContentTemplate = ({ title, children }: ContentTemplateProps) => {
         <div className={styles.pageBox}>
           <div className="container">
             <div className={styles.titleBox}>
-              <img src={asterisk} alt="asterisk" className={styles.asterisk} />
-              <h1 className={`title-1 bold ${styles.title}`}>{title}</h1>
+              <img src={asterisk} alt="asterisk" className={`fadeIn ${styles.asterisk}`} />
+              <h1 className={`title-1 bold fadeIn ${styles.title}`}>{title}</h1>
             </div>
             {children}
           </div>

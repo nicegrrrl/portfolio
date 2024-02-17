@@ -20,11 +20,15 @@ export const AboutPage = () => {
     <>
       <DefaultTemplate>
         <div className={styles.contentBox}>
-          <img src={asterisk} alt="asterisk" className={styles.asterisk} />
+          <img
+            src={asterisk}
+            alt="asterisk"
+            className={`fadeIn ${styles.asterisk}`}
+          />
           <div className={styles.leftContent}>
             <section className={styles.hi}>
-              <p className="title-4 textColor">{t("about.hi")}</p>
-              <div className={styles.alana}>
+              <p className="title-4 textColor fadeIn">{t("about.hi")}</p>
+              <div className={`fadeIn ${styles.alana}`}>
                 <p className="title-2">alana</p>
                 <img
                   src={happy}
@@ -34,7 +38,7 @@ export const AboutPage = () => {
               </div>
             </section>
             <div className={styles.divisorHorizontal}></div>
-            <section>
+            <section className="fadeIn">
               <h2 className={styles.title}>{t("about.aboutSection.title")}</h2>
               <ul className={styles.list}>
                 <li>
@@ -60,12 +64,12 @@ export const AboutPage = () => {
           </div>
           <div className={styles.divisorMiddle}></div>
           <div className={styles.rightContent}>
-            <section>
+            <section className="fadeIn">
               <h2 className={styles.title}>{t("about.location")}</h2>
               <Item text={t("about.fortaleza")} />
             </section>
             <div className={styles.divisorHorizontal}></div>
-            <section>
+            <section className="fadeIn">
               <h2 className={styles.title}>soft skills</h2>
               <ul className={styles.softSkills}>
                 <li>
@@ -98,7 +102,7 @@ export const AboutPage = () => {
               </ul>
             </section>
             <div className={styles.divisorHorizontal}></div>
-            <section>
+            <section className="fadeIn">
               <h2 className={styles.title}>{t("about.spotifySection")}</h2>
               <iframe
                 src="https://open.spotify.com/embed/track/1zeQjPT367QcGrkpIXYjuW?utm_source=generator"

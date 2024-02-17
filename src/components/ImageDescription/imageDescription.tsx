@@ -7,7 +7,7 @@ export const ImageDescription = ({
 }: ImageDescriptionProps) => {
   return (
     <>
-      <div className={styles.box}>
+      <div className={`fadeIn ${styles.box}`}>
         <img src={image} alt={description} className={styles.image} />
         <span className="text-6">{description}</span>
       </div>

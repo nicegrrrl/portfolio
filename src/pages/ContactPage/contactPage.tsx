@@ -22,7 +22,7 @@ export const ContactPage = () => {
   return (
     <>
       <ContentTemplate title={t("contact.title")}>
-        <div className={styles.contentBox}>
+        <div className={`fadeIn ${styles.contentBox}`}>
           <div className={styles.topContent}>
             <div className={styles.text}>
               <p className="text-1">{t("contact.work")}</p>

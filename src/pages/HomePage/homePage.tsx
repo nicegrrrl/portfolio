@@ -14,13 +14,12 @@ export const HomePage = () => {
 
   setCurrentIndex(routeIndex);
 
-
   return (
     <>
       <DefaultTemplate>
         <div className={styles.mainContent}>
-          <h2 className="title-3">alana maia</h2>
-          <div className={styles.fullstack}>
+          <h2 className="title-3 fadeIn">alana maia</h2>
+          <div className={`fadeIn ${styles.fullstack}`}>
             <h1 className="title-1 bold">{t("home.position")}</h1>
             <img src={tagImg} alt="close tag" className={styles.tagImg} />
           </div>

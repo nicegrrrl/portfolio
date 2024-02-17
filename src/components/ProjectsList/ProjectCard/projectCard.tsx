@@ -10,7 +10,7 @@ export const ProjectCard = ({ project }: { project: Project }) => {
 
   return (
     <>
-      <li className={styles.cardBox}>
+      <li className={`fadeIn ${styles.cardBox}`}>
         <div className={styles.card}>
           <div className={styles.topCard}>
             <img

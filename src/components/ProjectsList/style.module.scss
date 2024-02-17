@@ -1,10 +1,12 @@
 .list {
   margin: clamp(30px, 5vw, 80px) 0;
   display: flex;
-  flex-wrap: wrap;
   gap: 40px;
+  width: 103%;
+  height: 70%;
+  overflow-x: scroll;
 
   @media screen and (min-width: 790px) {
-    gap: 90px;
+    gap: 50px;
   }
 }
