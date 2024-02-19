@@ -22,7 +22,7 @@ export const HomePage = () => {
       <DefaultTemplate>
         <div className={styles.overlay}></div>
         <div className={styles.video}>
-          <video autoPlay loop muted>
+          <video autoPlay loop muted playsInline>
             <source src={video} type="video/mp4" />
           </video>
         </div>
