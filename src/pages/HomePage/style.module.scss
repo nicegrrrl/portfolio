@@ -14,9 +14,6 @@
   top: 0;
   left: 0;
   width: 100%;
-  // height: calc(100vh - 110px - 60px);
-  // height: calc(100% - 110px - 60px);
-  // height: 79vh;
   height: 100%;
   z-index: -1;
 
@@ -36,12 +33,9 @@ video {
 .overlay {
   position: absolute;
   top: 110px;
-  // top: 0;
   left: 0;
   width: 100%;
-  // height: calc(100% - 110px - 60px);
-  // height: calc(100vh - 110px - 60px);
-  height: 100%;
+  height: calc(100% - 110px - 60px);
   background-color: var(--video-bg-color);
 
   @media screen and (min-width: 790px) {

@@ -6,7 +6,6 @@ export const DefaultTemplate = ({ children }: ChildrenProps) => {
   return (
     <>
       <Header />
-      {/* <div className={styles.pageBox}>{children}</div> */}
       { children }
       <Footer />
     </>
