@@ -18,7 +18,7 @@
 
   @media screen and (min-width: 790px) {
     width: 501px;
-    // min-height: 374px;
+    min-height: 374px;
     height: 403px;
     box-shadow: -6px 7px 0px 1px rgba(192, 96, 161, 0.2);
   }
@@ -74,9 +74,11 @@
 
 .description {
   height: fit-content;
+  min-height: 80px;
+
 
   @media screen and (min-width: 790px) {
-    min-height: 80px;
+    // min-height: 80px;
   }
 }
 

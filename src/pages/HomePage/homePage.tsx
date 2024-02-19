@@ -27,7 +27,7 @@ export const HomePage = () => {
             <source src={video} type="video/mp4" />
           </video>
         </div>
-        <div className="container">
+        <div className="container noPaddingUpDown">
           <div className={styles.mainContent}>
             <h2 className="title-3 fadeIn">alana maia</h2>
             <div className={`fadeIn ${styles.fullstack}`}>
