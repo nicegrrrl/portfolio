@@ -20,23 +20,23 @@ export const HomePage = () => {
   return (
     <>
       <DefaultTemplate>
-      <div className={styles.box}>
-      <div className={styles.overlay}></div>
-        <div className={styles.video}>
-          <video autoPlay loop muted playsInline>
-            <source src={video} type="video/mp4" />
-          </video>
-        </div>
-        <div className="container noPaddingUpDown">
-          <div className={styles.mainContent}>
-            <h2 className="title-3 fadeIn">alana maia</h2>
-            <div className={`fadeIn ${styles.fullstack}`}>
-              <h1 className="title-1 bold">{t("home.position")}</h1>
-              <img src={tagImg} alt="close tag" className={styles.tagImg} />
+        <div className={styles.pageBox}>
+          <div className={styles.overlay}></div>
+          <div className={styles.video}>
+            <video autoPlay loop muted playsInline>
+              <source src={video} type="video/mp4" />
+            </video>
+          </div>
+          <div className="container noPaddingUpDown">
+            <div className={styles.mainContent}>
+              <h2 className="title-3 fadeIn">alana maia</h2>
+              <div className={`fadeIn ${styles.fullstack}`}>
+                <h1 className="title-1 bold">{t("home.position")}</h1>
+                <img src={tagImg} alt="close tag" className={styles.tagImg} />
+              </div>
             </div>
           </div>
         </div>
-      </div>
       </DefaultTemplate>
     </>
   );
