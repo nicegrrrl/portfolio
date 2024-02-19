@@ -20,7 +20,8 @@ export const HomePage = () => {
   return (
     <>
       <DefaultTemplate>
-        <div className={styles.overlay}></div>
+      <div className={styles.box}>
+      <div className={styles.overlay}></div>
         <div className={styles.video}>
           <video autoPlay loop muted playsInline>
             <source src={video} type="video/mp4" />
@@ -35,6 +36,7 @@ export const HomePage = () => {
             </div>
           </div>
         </div>
+      </div>
       </DefaultTemplate>
     </>
   );
