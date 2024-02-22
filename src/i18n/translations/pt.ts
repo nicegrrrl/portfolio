@@ -47,7 +47,7 @@ export default {
       },
       {
         description:
-          "API que gerenncia contatos, na qual você pode listar, adicionar, atualizar ou deletar seus contatos.",
+          "API que gerencia contatos, na qual você pode listar, adicionar, atualizar ou deletar seus contatos.",
       },
       {
         description:
