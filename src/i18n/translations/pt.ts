@@ -1,7 +1,7 @@
 export default {
   translation: {
     home: {
-      position: "DESEVOLVEDORA FULLSTACK",
+      position: "DESENVOLVEDORA FULLSTACK",
     },
     header: {
       home: "início",
